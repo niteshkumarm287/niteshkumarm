@@ -161,6 +161,199 @@ section h2 {
     transform: translateY(-3px);
 }
 
+/* Reset and Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0d1117; /* Black background */
+    color: #c9d1d9; /* Light gray text */
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: #ffffff; /* White text for headings */
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #00ff88; /* Neon green links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00d977; /* Darker neon green on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: #0d1117; /* Match the body background */
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-bottom: 1px solid #00ff88; /* Neon green underline for separation */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #00ff88; /* Neon green highlight */
+    margin: 0;
+}
+
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #00ff88; /* Neon green button */
+    color: #0d1117;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #00d977; /* Darker neon green */
+    transform: translateY(-3px);
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    background: #161b22; /* Dark gray for nav bar */
+    border-bottom: 1px solid #00ff88;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #c9d1d9; /* Light gray text */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ff88;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #161b22; /* Dark gray card background */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 255, 136, 0.2); /* Neon green glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 255, 136, 0.3);
+}
+
+section h2 {
+    text-align: center;
+    color: #00ff88; /* Neon green for section headings */
+    margin-bottom: 1.5rem;
+}
+
+/* Skill and Project Cards */
+.skills-grid, .projects-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.skill-card, .project-card {
+    flex: 1;
+    background: #21262d; /* Slightly lighter gray for cards */
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px;
+    color: #c9d1d9;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 255, 136, 0.3); /* Neon green glow on hover */
+}
+
+.skill-card h3, .project-card h3 {
+    color: #00ff88; /* Neon green card headings */
+}
+
+.skill-card p, .project-card p {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+/* Contact Section */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.contact-links li a {
+    font-size: 1.2rem;
+    color: #00ff88;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-links li a:hover {
+    color: #00d977;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #161b22;
+    color: #c9d1d9;
+    padding: 1.5rem 0;
+    border-top: 1px solid #00ff88;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .skills-grid, .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+}
+
 /* Footer */
 footer {
     text-align: center;
