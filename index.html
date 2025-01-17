@@ -3,88 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌟 Nitesh Kumar M - Portfolio</title>
+    <title>Portfolio - Nitesh Kumar M</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>🌟 Nitesh Kumar M</h1>
-        <p>🚀 DevOps Engineer | ☁️ Cloud Automation | 🛠️ Infrastructure as Code</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Nitesh Kumar M</span> 👋</h1>
+            <p>A passionate <span class="highlight">DevOps Engineer</span> building cloud-native solutions and automating infrastructures.</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">📜 About</a></li>
-            <li><a href="#skills">💻 Skills</a></li>
-            <li><a href="#experience">📈 Experience</a></li>
-            <li><a href="#certifications">📜 Certifications</a></li>
-            <li><a href="#contact">📬 Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>📜 About Me</h2>
-        <p>🌟 Cloud & DevOps Engineer with 3.5+ years of hands-on experience in designing, implementing, and optimizing cloud infrastructure. Specializing in AWS/GCP, Kubernetes administration, Terraform automation, and CI/CD pipeline deployment.</p>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a <strong>DevOps Engineer</strong> with 3.5+ years of experience in cloud technologies, Kubernetes, Terraform, and CI/CD automation. I am passionate about solving complex infrastructure challenges and optimizing cloud-based solutions.</p>
     </section>
 
-    <section id="skills">
-        <h2>💻 Skills</h2>
-        <ul>
-            <li><strong>☁️ Cloud Platforms:</strong> AWS, Google Cloud Platform (GCP)</li>
-            <li><strong>⚙️ Orchestration & Containerization:</strong> Kubernetes, Docker</li>
-            <li><strong>🚀 CI/CD & Configuration Management:</strong> Jenkins, GitHub Actions, Ansible, Terraform, Argo CD</li>
-            <li><strong>📊 Monitoring & Logging:</strong> Prometheus, Grafana, Datadog, Splunk, Dynatrace</li>
-            <li><strong>📝 Version Control & Scripting:</strong> GitHub, Git, Bash, Python (Intermediate), Groovy</li>
-            <li><strong>📢 Incident Management Tools:</strong> BigPanda, Moogsoft, Datadog Incident Management</li>
-            <li><strong>🗂️ Ticketing Tools:</strong> Jira, ServiceNow</li>
-        </ul>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-aws"></i>
+                <h3>AWS & GCP</h3>
+                <p>Cloud services, VPC, IAM, and Kubernetes Engine</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cubes"></i>
+                <h3>Kubernetes</h3>
+                <p>Cluster administration, Helm charts, Argo CD</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>CI/CD</h3>
+                <p>Jenkins, GitHub Actions, Terraform</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Automation</h3>
+                <p>Python, Bash scripting, Infrastructure as Code</p>
+            </div>
+        </div>
     </section>
 
-    <section id="experience">
-        <h2>📈 Experience</h2>
-        <h3>🏢 LTIMindtree | SRE/DevOps Engineer</h3>
-        <p><em>📅 03/2024 - Present</em></p>
-        <ul>
-            <li>📊 Integrated real-time log analytics with Datadog, reducing mean time to acknowledgment by 20%.</li>
-            <li>🌐 Facilitated zero-downtime deployments through blue-green deployment methodologies.</li>
-            <li>🛡️ Spearheaded chaos engineering to improve robustness across 10+ critical microservices.</li>
-            <li>📘 Designed Kubernetes training programs, improving team proficiency by 50%.</li>
-            <li>💡 Developed data pipelines and ETL processes using Python, ensuring high data quality.</li>
-        </ul>
-        
-        <h3>🏢 LTIMindtree | DevOps Engineer</h3>
-        <p><em>📅 02/2022 - 03/2024</em></p>
-        <ul>
-            <li>⚡ Reduced app deployment times by 60% with CI/CD pipelines using Jenkins, Docker, and Kubernetes.</li>
-            <li>📈 Boosted application availability to 99.9% with optimized AWS cloud infrastructure.</li>
-            <li>📦 Orchestrated release processes, improving development productivity by 40%.</li>
-            <li>🔧 Implemented ITIL processes for change management, improving system performance by 40%.</li>
-        </ul>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>CI/CD for Microservices</h3>
+                <p>Built a scalable CI/CD pipeline using Jenkins and Kubernetes to ensure zero-downtime deployments.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Cost Optimization with Kubecost</h3>
+                <p>Integrated Kubecost for cost analysis in Kubernetes clusters, reducing cloud expenses by 20%.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Infrastructure Automation</h3>
+                <p>Automated infrastructure provisioning with Terraform for a multi-region GCP deployment.</p>
+                <a href="#">View Details</a>
+            </div>
+        </div>
     </section>
 
-    <section id="certifications">
-        <h2>📜 Certifications</h2>
-        <ul>
-            <li>☁️ Google Associate Cloud Engineer</li>
-            <li>📘 Azure Fundamentals – AZ-900</li>
-            <li>📊 Log Management Fundamentals – Datadog</li>
-            <li>🌐 Oracle Cloud Infrastructure</li>
-            <li>🛡️ Incident Intelligence – BigPanda</li>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for any exciting opportunities or collaborations!</p>
+        <ul class="contact-links">
+            <li><a href="mailto:kumarmnitesh@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="https://www.linkedin.com/in/nitesh-kumar-m/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/niteshkumarm287" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
         </ul>
-    </section>
-
-    <section id="contact">
-        <h2>📬 Contact</h2>
-        <p><strong>Email:</strong> 💌 <a href="mailto:kumarmnitesh@gmail.com">kumarmnitesh@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> 🔗 <a href="https://www.linkedin.com/in/nitesh-kumar-m/" target="_blank">linkedin.com/in/nitesh-kumar-m</a></p>
-        <p><strong>Location:</strong> 📍 Bengaluru, Karnataka</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 🌟 Nitesh Kumar M | Crafted with 💖 and ☕</p>
+        <p>© 2025 Nitesh Kumar M | Crafted with ❤️</p>
     </footer>
 
-    <!-- Link to your JavaScript file -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
