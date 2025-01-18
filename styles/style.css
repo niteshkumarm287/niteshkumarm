@@ -1,128 +1,141 @@
-/* Avatar Styling */
-.avatar {
-    width: 100px; /* Smaller avatar */
-    height: 100px; /* Keep it circular */
-    border-radius: 50%; /* Fully round */
-    border: 3px solid #00ff88; /* Neon green border */
-    margin-bottom: 1.5rem; /* Space below the avatar */
-    box-shadow: 0 4px 8px rgba(0, 255, 136, 0.3); /* Subtle neon green glow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.avatar:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 8px 16px rgba(0, 255, 136, 0.5); /* Brighter glow */
-}
-
-/* Other Existing Styles (Unchanged) */
-body {
+/* Modern CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Custom Properties */
+:root {
+    --primary-color: #00ff88;
+    --secondary-color: #00d977;
+    --bg-dark: #0d1117;
+    --bg-card: #161b22;
+    --text-light: #c9d1d9;
+    --text-white: #ffffff;
+    --gradient-primary: linear-gradient(45deg, var(--primary-color), #00ffcc);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Theme Toggle Support */
+[data-theme="light"] {
+    --bg-dark: #f0f2f5;
+    --bg-card: #ffffff;
+    --text-light: #4a4a4a;
+    --text-white: #2a2a2a;
+}
+
+/* Global Styles */
+body {
     font-family: 'Poppins', sans-serif;
-    background: #0d1117; /* Black background */
-    color: #c9d1d9; /* Light gray text */
-    scroll-behavior: smooth;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-h1, h2, h3 {
-    color: #ffffff; /* White text for headings */
-    text-transform: uppercase;
+/* Navigation */
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: rgba(13, 17, 23, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: var(--transition-smooth);
 }
 
-a {
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--text-light);
     text-decoration: none;
-    color: #00ff88; /* Neon green links */
-    transition: color 0.3s ease;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
 }
 
-a:hover {
-    color: #00d977; /* Darker neon green on hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: var(--transition-smooth);
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 /* Hero Section */
 .hero {
-    background: #0d1117; /* Match the body background */
-    color: white;
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     padding: 6rem 2rem;
-    border-bottom: 1px solid #00ff88; /* Neon green underline for separation */
+    overflow: hidden;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    color: #00ff88; /* Neon green highlight */
-    margin: 0;
+.hero-content {
+    text-align: center;
+    z-index: 2;
 }
 
-.hero p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-}
-
-.cta-btn {
+.avatar-container {
+    position: relative;
     display: inline-block;
-    background: #00ff88; /* Neon green button */
-    color: #0d1117;
-    padding: 0.75rem 1.5rem;
-    margin-top: 2rem;
-    border-radius: 5px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+}
+
+.status-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-primary);
+    color: var(--bg-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+/* Glitch Effect */
+.glitch {
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.cta-btn:hover {
-    background: #00d977; /* Darker neon green */
-    transform: translateY(-3px);
-}
-
-/* Navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem;
-    margin: 0;
-    background: #161b22; /* Dark gray for nav bar */
-    border-bottom: 1px solid #00ff88;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    color: #c9d1d9; /* Light gray text */
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #00ff88;
-    transform: translateY(-3px);
-}
-
-/* Sections */
-section {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #161b22; /* Dark gray card background */
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 255, 136, 0.2); /* Neon green glow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 255, 136, 0.3);
-}
-
-section h2 {
-    text-align: center;
-    color: #00ff88; /* Neon green for section headings */
-    margin-bottom: 1.5rem;
-}
-
-/* Other CSS (Unchanged) */
+    position: relative;
+    text-shadow
