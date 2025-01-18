@@ -1,391 +1,234 @@
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitesh Kumar M - DevOps Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 
-/* Custom Properties */
-:root {
-    --primary-color: #00ff88;
-    --secondary-color: #00d977;
-    --bg-color: #0d1117;
-    --text-color: #fff;
-    --nav-color: rgba(13, 17, 23, 0.9);
-}
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Nite<span>sh</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Nitesh Kumar M</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="#contact">Let's Connect</a>
+            </div>
+        </div>
+        <div class="particle-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-}
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="https://avatars.githubusercontent.com/u/65917611?s=400" alt="Profile Image">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Nitesh and I'm a <span class="typing-2"></span></div>
+                    <p>Experienced DevOps Engineer with 3.5+ years of expertise in cloud technologies, Kubernetes, and automation. Skilled in designing and implementing CI/CD pipelines, infrastructure as code, and cloud-native solutions. Passionate about optimizing development workflows and maintaining high-availability systems.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="number">3.5+</span>
+                            <span class="label">Years Experience</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="number">50+</span>
+                            <span class="label">Projects Completed</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="number">20+</span>
+                            <span class="label">Happy Clients</span>
+                        </div>
+                    </div>
+                    <a href="#" class="download-cv">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-body {
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-}
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-aws"></i>
+                        <h3>AWS</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-google"></i>
+                        <h3>GCP</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-dharmachakra"></i>
+                        <h3>Kubernetes</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 95%"></div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>DevOps</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 92%"></div>
+                            <span>92%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Custom Cursor */
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-}
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">CI/CD Pipeline</div>
+                        <p>Implemented robust CI/CD pipelines using Jenkins and ArgoCD for microservices deployment on Kubernetes.</p>
+                        <div class="tech-stack">
+                            <span>Jenkins</span>
+                            <span>ArgoCD</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Cost Optimization</div>
+                        <p>Reduced cloud infrastructure costs by 20% through implementation of Kubecost and resource optimization.</p>
+                        <div class="tech-stack">
+                            <span>Kubecost</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-cloud"></i>
+                        <div class="text">Cloud Migration</div>
+                        <p>Successfully migrated on-premise applications to cloud using infrastructure as code with Terraform.</p>
+                        <div class="tech-stack">
+                            <span>Terraform</span>
+                            <span>AWS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.cursor2 {
-    width: 8px;
-    height: 8px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-}
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">kumarmnitesh@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title"><a href="https://www.linkedin.com/in/nitesh-kumar-m/" target="_blank">nitesh-kumar-m</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-github"></i>
+                            <div class="info">
+                                <div class="head">GitHub</div>
+                                <div class="sub-title"><a href="https://github.com/niteshkumarm287" target="_blank">niteshkumarm287</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Particles */
-.particle-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
+    <!-- Footer -->
+    <footer>
+        <span>Created By <a href="#">Nitesh Kumar M</a> | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
+    </footer>
 
-.particle {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    animation: float 15s infinite linear;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-/* Navbar Styling */
-.navbar {
-    position: fixed;
-    width: 100%;
-    padding: 15px 0;
-    background: var(--nav-color);
-    backdrop-filter: blur(10px);
-    font-family: 'Ubuntu', sans-serif;
-    z-index: 999;
-    transition: all 0.3s ease;
-}
-
-.navbar.sticky {
-    padding: 10px 0;
-    background: var(--nav-color);
-}
-
-.max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a {
-    color: var(--text-color);
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.navbar .logo a span {
-    color: var(--primary-color);
-}
-
-.navbar .menu li {
-    list-style: none;
-    display: inline-block;
-}
-
-.navbar .menu li a {
-    display: block;
-    color: var(--text-color);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-
-.navbar .menu li a:hover {
-    color: var(--primary-color);
-}
-
-/* Home Section Styling */
-.home {
-    display: flex;
-    background: var(--bg-color);
-    height: 100vh;
-    color: var(--text-color);
-    min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.home .max-width {
-    margin: auto 0 auto 40px;
-}
-
-.home .home-content .text-1 {
-    font-size: 27px;
-}
-
-.home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: var(--primary-color);
-    font-weight: 500;
-}
-
-.home .home-content a {
-    display: inline-block;
-    background: var(--primary-color);
-    color: var(--bg-color);
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid var(--primary-color);
-    transition: all 0.3s ease;
-}
-
-.home .home-content a:hover {
-    color: var(--primary-color);
-    background: none;
-}
-
-/* About Section Styling */
-.about {
-    padding: 100px 0;
-    font-family: 'Poppins', sans-serif;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-.about .max-width {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about .title {
-    position: relative;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.about .title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    height: 4px;
-    width: 50px;
-    background: var(--primary-color);
-}
-
-.about .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.about .column {
-    flex: 1;
-    padding: 20px;
-}
-
-.about .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.about .text span {
-    color: var(--primary-color);
-}
-
-.about .para {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-top: 10px;
-}
-
-.about .about-img {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.about .about-img img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-    border: 3px solid var(--primary-color);
-}
-
-/* Services Section Styling */
-.services {
-    padding: 100px 0;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-.services .title {
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.services .title::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 4px;
-    background: var(--primary-color);
-}
-
-.services .service-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.services .card {
-    flex: 1;
-    margin: 15px;
-    background: var(--nav-color);
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.services .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-.services .card i {
-    font-size: 50px;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.services .card .card-title {
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.services .card .card-desc {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Contact Section Styling */
-.contact {
-    padding: 100px 0;
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-.contact .title {
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.contact .title::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 4px;
-    background: var(--primary-color);
-}
-
-.contact .contact-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact .form {
-    flex: 1;
-    margin: 15px;
-    max-width: 500px;
-}
-
-.contact .form input, .contact .form textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    background: var(--nav-color);
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 16px;
-    color: var(--text-color);
-}
-
-.contact .form button {
-    background: var(--primary-color);
-    color: var(--bg-color);
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.contact .form button:hover {
-    background: var(--bg-color);
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
