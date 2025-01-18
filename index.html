@@ -3,234 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Nitesh Kumar M</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Nitesh Kumar M - DevOps Engineer</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <nav class="nav-container">
-        <div class="nav-brand">NK</div>
-        <ul>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="theme-toggle">
-            <i class="fas fa-moon"></i>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Nite<span>sh</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content" data-aos="fade-up">
-            <div class="avatar-container">
-                <img src="https://avatars.githubusercontent.com/u/65917611?s=400&u=02cd7e3680379242eb8b2a55044b074647f67d70&v=4" 
-                     alt="Nitesh Kumar M Avatar" 
-                     class="avatar">
-                <div class="status-indicator">Available for opportunities</div>
-            </div>
-            <h1 class="glitch" data-text="Hi, I'm Nitesh Kumar M">Hi, I'm Nitesh Kumar M</h1>
-            <div class="typing-container">
-                <p>I'm a <span class="typing"></span></p>
-            </div>
-            <div class="hero-buttons">
-                <a href="#projects" class="cta-btn primary">View My Work</a>
-                <a href="#contact" class="cta-btn secondary">Contact Me</a>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Nitesh Kumar M</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="#contact">Let's Connect</a>
             </div>
         </div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+        <div class="particle-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
         </div>
-    </header>
+    </section>
 
-    <section id="about" class="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p class="highlight-text">3.5+ Years of Experience</p>
-                <p>I am a <strong>DevOps Engineer</strong> specializing in cloud-native solutions and infrastructure automation. My expertise includes:</p>
-                <ul class="experience-list">
-                    <li><i class="fas fa-check"></i> Cloud Architecture & Migration</li>
-                    <li><i class="fas fa-check"></i> Kubernetes Orchestration</li>
-                    <li><i class="fas fa-check"></i> CI/CD Pipeline Design</li>
-                    <li><i class="fas fa-check"></i> Infrastructure as Code</li>
-                </ul>
-            </div>
-            <div class="stats-container">
-                <div class="stat-card">
-                    <i class="fas fa-code-branch"></i>
-                    <h3>100+</h3>
-                    <p>Projects Deployed</p>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="https://avatars.githubusercontent.com/u/65917611?s=400" alt="Profile Image">
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-cloud"></i>
-                    <h3>50+</h3>
-                    <p>Cloud Solutions</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-users"></i>
-                    <h3>20+</h3>
-                    <p>Happy Clients</p>
+                <div class="column right">
+                    <div class="text">I'm Nitesh and I'm a <span class="typing-2"></span></div>
+                    <p>Experienced DevOps Engineer with 3.5+ years of expertise in cloud technologies, Kubernetes, and automation. Skilled in designing and implementing CI/CD pipelines, infrastructure as code, and cloud-native solutions. Passionate about optimizing development workflows and maintaining high-availability systems.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="number">3.5+</span>
+                            <span class="label">Years Experience</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="number">50+</span>
+                            <span class="label">Projects Completed</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="number">20+</span>
+                            <span class="label">Happy Clients</span>
+                        </div>
+                    </div>
+                    <a href="#" class="download-cv">Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills" data-aos="fade-up">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Cloud Platforms</h3>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
                 <div class="skills-grid">
-                    <div class="skill-card" data-aos="zoom-in">
+                    <div class="skill-card">
                         <i class="fab fa-aws"></i>
-                        <div class="skill-info">
-                            <h4>AWS</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
+                        <h3>AWS</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                            <span>90%</span>
                         </div>
                     </div>
-                    <div class="skill-card" data-aos="zoom-in">
+                    <div class="skill-card">
                         <i class="fab fa-google"></i>
-                        <div class="skill-info">
-                            <h4>GCP</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 85%"></div>
-                            </div>
+                        <h3>GCP</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                            <span>85%</span>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>DevOps Tools</h3>
-                <div class="skills-grid">
-                    <div class="skill-card" data-aos="zoom-in">
+                    <div class="skill-card">
                         <i class="fas fa-dharmachakra"></i>
-                        <div class="skill-info">
-                            <h4>Kubernetes</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 95%"></div>
+                        <h3>Kubernetes</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 95%"></div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>DevOps</h3>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 92%"></div>
+                            <span>92%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">CI/CD Pipeline</div>
+                        <p>Implemented robust CI/CD pipelines using Jenkins and ArgoCD for microservices deployment on Kubernetes.</p>
+                        <div class="tech-stack">
+                            <span>Jenkins</span>
+                            <span>ArgoCD</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Cost Optimization</div>
+                        <p>Reduced cloud infrastructure costs by 20% through implementation of Kubecost and resource optimization.</p>
+                        <div class="tech-stack">
+                            <span>Kubecost</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-cloud"></i>
+                        <div class="text">Cloud Migration</div>
+                        <p>Successfully migrated on-premise applications to cloud using infrastructure as code with Terraform.</p>
+                        <div class="tech-stack">
+                            <span>Terraform</span>
+                            <span>AWS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">kumarmnitesh@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title"><a href="https://www.linkedin.com/in/nitesh-kumar-m/" target="_blank">nitesh-kumar-m</a></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-github"></i>
+                            <div class="info">
+                                <div class="head">GitHub</div>
+                                <div class="sub-title"><a href="https://github.com/niteshkumarm287" target="_blank">niteshkumarm287</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="skill-card" data-aos="zoom-in">
-                        <i class="fas fa-infinity"></i>
-                        <div class="skill-info">
-                            <h4>ArgoCD</h4>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 88%"></div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
                             </div>
                         </div>
-                    </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects" data-aos="fade-up">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card" data-aos="flip-left">
-                <div class="project-image">
-                    <img src="/api/placeholder/400/300" alt="CI/CD Pipeline">
-                </div>
-                <div class="project-content">
-                    <h3>CI/CD for Microservices</h3>
-                    <p>Implemented a robust CI/CD pipeline using Jenkins and Kubernetes for zero-downtime deployments.</p>
-                    <div class="project-tech">
-                        <span>Jenkins</span>
-                        <span>Kubernetes</span>
-                        <span>Docker</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card" data-aos="flip-right">
-                <div class="project-image">
-                    <img src="/api/placeholder/400/300" alt="Cost Optimization">
-                </div>
-                <div class="project-content">
-                    <h3>Kubecost Integration</h3>
-                    <p>Reduced cloud expenses by 20% through implementation of Kubecost analysis and optimization.</p>
-                    <div class="project-tech">
-                        <span>Kubecost</span>
-                        <span>Prometheus</span>
-                        <span>Grafana</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact" data-aos="fade-up">
-        <h2>Get In Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Let's Talk!</h3>
-                <p>Available for freelance opportunities and exciting projects.</p>
-                <div class="contact-links">
-                    <a href="mailto:kumarmnitesh@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>kumarmnitesh@gmail.com</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nitesh-kumar-m/" class="contact-item" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn Profile</span>
-                    </a>
-                    <a href="https://github.com/niteshkumarm287" class="contact-item" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub Profile</span>
-                    </a>
-                </div>
-            </div>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" required>
-                    <label for="name">Name</label>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" required>
-                    <label for="email">Email</label>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" required></textarea>
-                    <label for="message">Message</label>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-text">
-                <p>© 2025 Nitesh Kumar M | Crafted with <i class="fas fa-heart"></i></p>
-            </div>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
+        <span>Created By <a href="#">Nitesh Kumar M</a> | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
     </footer>
 
-    <div class="scroll-indicator"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
