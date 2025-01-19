@@ -414,20 +414,3 @@ footer {
     }
 }
 
-/* theme */
-:root {
-    --background: #fff;
-    --text: #000;
-}
-
-[data-theme="dark"] {
-    --background: #121212;
-    --text: #fff;
-}
-
-body {
-    background: var(--background);
-    color: var(--text);
-    transition: background 0.3s, color 0.3s;
-}
-
