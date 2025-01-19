@@ -288,54 +288,41 @@ body {
     background: var(--navy);
 }
 
-.awards .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--lightest);
-}
-
 .awards-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Spacing between cards */
 }
 
 .award-card {
-    background: var(--navy);
-    padding: 1.5rem;
+    background: var(--dark);
+    padding: 2rem;
     border-radius: 10px;
+    text-align: center;
     transition: var(--transition);
-    text-align: center; /* Added for alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
 .award-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Hover effect */
 }
 
 .award-card i {
+    font-size: 3rem;
     color: var(--primary);
-    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .award-card h3 {
     font-size: 1.5rem;
-    color: var(--primary);
-    margin: 0.5rem 0;
+    color: var(--lightest);
+    margin-bottom: 0.5rem;
 }
 
 .award-card p {
     color: var(--light);
     font-size: 1rem;
     line-height: 1.5;
-}
-
-.awards {
-    padding: 6rem 0;
-    background: var(--navy); /* Use the navy background for differentiation */
-    color: var(--lightest); /* Adjust text color if needed for contrast */
 }
 
 
