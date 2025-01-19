@@ -29,7 +29,15 @@
             <div class="home-content">
                 <h1>Hello, I'm <span class="highlight">Nitesh Kumar M</span></h1>
                 <p class="profession">A <span class="typing">DevOps Engineer</span></p>
-                <a href="#contact" class="btn-primary">Let's Connect</a>
+                <button class="btn-primary" onclick="showContactPopup()">Let's Connect</button>
+                <div id="contactPopup" class="popup">
+               <div class="popup-content">
+               <h2>Contact Me</h2>
+               <p>Email: <a href="mailto:kumarmnitesh@gmail.com">niteshkumarm287@gmail.com</a></p>
+               <p>LinkedIn: <a href="https://www.linkedin.com/in/nitesh-kumar-m/" target="_blank">Nitesh Kumar M</a></p>
+               <button onclick="closePopup()">Close</button>
+               </div>
+               </div>
             </div>
         </div>
     </section>
