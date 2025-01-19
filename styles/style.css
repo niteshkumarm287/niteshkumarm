@@ -285,7 +285,7 @@ body {
 /* Awards & Recognition Section */
 .awards {
   padding: 6rem 0;
-  margin-top: 4rem; /* Added margin-top to separate sections */
+  margin-top: 4rem; 
 }
 
 .awards .title {
@@ -306,12 +306,11 @@ body {
   background: var(--dark);
   padding: 1.5rem;
   border-radius: 10px;
-  text-align: center;
-  transition: var(--transition);
+  transition: var(--transition); 
 }
 
 .award-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); 
 }
 
 .award-card i {
