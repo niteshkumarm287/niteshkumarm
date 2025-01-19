@@ -414,3 +414,19 @@ footer {
     }
 }
 
+.typing {
+    font-weight: bold;
+    color: var(--primary); /* Or any color you want */
+    white-space: nowrap;
+    border-right: 2px solid var(--primary);
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from {
+        border-color: var(--primary);
+    }
+    to {
+        border-color: transparent;
+    }
+}
