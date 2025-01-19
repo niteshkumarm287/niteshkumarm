@@ -386,3 +386,97 @@ footer {
 .smooth-transition {
     transition: var(--transition);
 }
+
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    z-index: 99;
+    transition: var(--transition);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--primary);
+    z-index: 1000;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: none;
+    color: var(--dark);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 99;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--light);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        background: var(--navy);
+        flex-direction: column;
+        padding: 2rem;
+        transition: var(--transition);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+}
+
+/* Active Navigation Link */
+.menu a.active {
+    color: var(--primary);
+}
+
+/* Light Theme Styles */
+.light-theme {
+    --dark: #ffffff;
+    --navy: #f5f5f5;
+    --light: #2d2d2d;
+    --lightest: #1a1a1a;
+}
