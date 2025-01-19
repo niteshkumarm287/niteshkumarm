@@ -1,27 +1,34 @@
-const words = ["DevOps Engineer", "Cloud Enthusiast", "Tech Advocate"];
-let wordIndex = 0;
+// Typing effect logic
+const typedTextSpan = document.querySelector(".typing");
+const textArray = ["DevOps Engineer", "Cloud Enthusiast", "Kubernetes Specialist"];
+const typingDelay = 100;
+const erasingDelay = 50;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
 let charIndex = 0;
-const typingElement = document.querySelector(".typing");
 
 function type() {
-    if (charIndex < words[wordIndex].length) {
-        typingElement.textContent += words[wordIndex].charAt(charIndex);
+    if (charIndex < textArray[textArrayIndex].length) {
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
         charIndex++;
-        setTimeout(type, 150);
+        setTimeout(type, typingDelay);
     } else {
-        setTimeout(erase, 1000);
+        setTimeout(erase, newTextDelay);
     }
 }
 
 function erase() {
     if (charIndex > 0) {
-        typingElement.textContent = words[wordIndex].substring(0, charIndex - 1);
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
         charIndex--;
-        setTimeout(erase, 100);
+        setTimeout(erase, erasingDelay);
     } else {
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(type, 500);
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay);
     }
 }
 
-document.addEventListener("DOMContentLoaded", type);
+document.addEventListener("DOMContentLoaded", () => {
+    if (textArray.length) setTimeout(type, newTextDelay);
+});
