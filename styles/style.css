@@ -282,6 +282,42 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Awards & Recognition Section */
+.awards {
+    padding: 6rem 0;
+    background: var(--navy);
+}
+
+.award-card {
+    background: var(--dark);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+}
+
+.award-card i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.award-card h3 {
+    font-size: 1.5rem;
+    color: var(--lightest);
+    margin: 0.5rem 0;
+}
+
+.award-card p {
+    color: var(--light);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 /* Contact Section */
 .contact {
     padding: 6rem 0;
