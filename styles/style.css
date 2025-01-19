@@ -119,17 +119,23 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Button Styles */
-.btn-primary {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
-    border-radius: 5px;
-    font-weight: 500;
-    transition: var(--transition);
-    text-decoration: none;
+/* ... your existing CSS ... */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+  text-align: center;
 }
 
 .btn-primary:hover {
