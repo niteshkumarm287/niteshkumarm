@@ -429,3 +429,47 @@ footer {
         border-color: transparent;
     }
 }
+
+
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    background: #101010; /* Dark background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rubiks-cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotateCube 6s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #000;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.front  { transform: rotateY(0deg) translateZ(100px); background: red; }
+.back   { transform: rotateY(180deg) translateZ(100px); background: blue; }
+.left   { transform: rotateY(-90deg) translateZ(100px); background: green; }
+.right  { transform: rotateY(90deg) translateZ(100px); background: yellow; }
+.top    { transform: rotateX(90deg) translateZ(100px); background: orange; }
+.bottom { transform: rotateX(-90deg) translateZ(100px); background: white; }
+
+@keyframes rotateCube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
