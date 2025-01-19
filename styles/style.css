@@ -284,52 +284,52 @@ body {
 
 /* Awards & Recognition Section */
 .awards {
-    padding: 6rem 0;
-    background: var(--navy);
+  padding: 6rem 0;
+  margin-top: 4rem; /* Added margin-top to separate sections */
 }
 
 .awards .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--lightest);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--lightest);
 }
 
 .awards-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 .award-card {
-    background: var(--dark);
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: var(--transition);
+  background: var(--dark);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: var(--transition);
 }
 
 .award-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .award-card i {
-    font-size: 2.5rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
 }
 
 .award-card h3 {
-    font-size: 1.5rem;
-    color: var(--lightest);
-    margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--lightest);
+  margin: 0.5rem 0;
 }
 
 .award-card p {
-    color: var(--light);
-    font-size: 1rem;
-    line-height: 1.5;
+  color: var(--light);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Contact Section */
