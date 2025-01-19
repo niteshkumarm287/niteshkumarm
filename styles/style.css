@@ -332,6 +332,12 @@ body {
     line-height: 1.5;
 }
 
+.awards {
+    padding: 6rem 0;
+    background: var(--navy); /* Use the navy background for differentiation */
+    color: var(--lightest); /* Adjust text color if needed for contrast */
+}
+
 
 /* Contact Section */
 .contact {
