@@ -174,3 +174,12 @@ window.addEventListener('load', () => {
         preloader.classList.add('preloader-finish');
     }
 });
+
+
+function showContactPopup() {
+  document.getElementById("contactPopup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("contactPopup").style.display = "none";
+}
