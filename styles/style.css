@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -48,22 +49,26 @@ body {
     z-index: 100;
     transition: var(--transition);
 }
+
 .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo a {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
 }
+
 .menu {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
+
 .menu a {
     color: var(--light);
     text-decoration: none;
@@ -71,6 +76,7 @@ body {
     transition: var(--transition);
     position: relative;
 }
+
 .menu a::after {
     content: '';
     position: absolute;
@@ -81,9 +87,11 @@ body {
     background: var(--primary);
     transition: width 0.3s;
 }
+
 .menu a:hover::after {
     width: 100%;
 }
+
 /* Home Section */
 .home {
     min-height: 100vh;
@@ -91,21 +99,26 @@ body {
     align-items: center;
     padding-top: 5rem;
 }
+
 .home-content {
     max-width: 800px;
 }
+
 .home-content h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
 .highlight {
     color: var(--primary);
 }
+
 .profession {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
+
 /* Button Styles */
 .btn-primary {
     display: inline-block;
@@ -118,15 +131,18 @@ body {
     transition: var(--transition);
     text-decoration: none;
 }
+
 .btn-primary:hover {
     background: var(--primary);
     color: var(--dark);
 }
+
 /* About Section */
 .about {
     padding: 6rem 0;
     background: var(--navy);
 }
+
 .title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -134,12 +150,14 @@ body {
     margin-bottom: 3rem;
     color: var(--lightest);
 }
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 4rem;
     align-items: center;
 }
+
 .column.left img {
     width: 300px;
     height: 300px;
@@ -149,9 +167,11 @@ body {
     padding: 5px;
     transition: var(--transition);
 }
+
 .column.left img:hover {
     transform: scale(1.05);
 }
+
 /* Stats Grid */
 .stats {
     display: grid;
@@ -159,6 +179,7 @@ body {
     gap: 2rem;
     margin: 2rem 0;
 }
+
 .stat-box {
     background: var(--dark);
     padding: 1.5rem;
@@ -166,23 +187,28 @@ body {
     text-align: center;
     transition: var(--transition);
 }
+
 .stat-box:hover {
     transform: translateY(-5px);
 }
+
 .number {
     font-size: 2rem;
     color: var(--primary);
     font-weight: 700;
 }
+
 /* Skills Section */
 .skills {
     padding: 6rem 0;
 }
+
 .skills-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
+
 .skill-card {
     background: var(--navy);
     padding: 2rem;
@@ -190,19 +216,23 @@ body {
     text-align: center;
     transition: var(--transition);
 }
+
 .skill-card:hover {
     transform: translateY(-5px);
 }
+
 .skill-card i {
     font-size: 3rem;
     color: var(--primary);
     margin-bottom: 1rem;
 }
+
 /* Experience Section */
 .experience {
     padding: 6rem 0;
     background: var(--navy);
 }
+
 .experience-item {
     background: var(--dark);
     padding: 2rem;
@@ -210,62 +240,47 @@ body {
     margin-bottom: 2rem;
     transition: var(--transition);
 }
+
 .experience-item:hover {
     transform: translateY(-5px);
 }
+
 .experience-title {
     color: var(--primary);
     font-size: 1.5rem;
 }
+
 .experience-company {
     color: var(--lightest);
     font-size: 1.2rem;
 }
+
 .experience-date {
     color: var(--light);
     font-size: 0.9rem;
 }
+
 /* Certifications Section */
 .certifications {
     padding: 6rem 0;
 }
+
 .cert-card {
     background: var(--navy);
     padding: 1.5rem;
     border-radius: 10px;
     transition: var(--transition);
 }
+
 .cert-card:hover {
     transform: translateY(-5px);
 }
+
 .cert-card i {
     color: var(--primary);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-/* Footer */
-footer {
-    background: var(--navy);
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .column.left {
-        margin: auto;
-    }
-    .stats {
-        grid-template-columns: 1fr;
-    }
-    .home-content h1 {
-        font-size: 2.5rem;
-    }
-
 
 /* Contact Section */
 .contact {
@@ -326,4 +341,31 @@ footer {
 
 .contact-card a:hover {
     color: var(--primary-dark);
+}
+
+/* Footer */
+footer {
+    background: var(--navy);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .column.left {
+        margin: auto;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
 }
