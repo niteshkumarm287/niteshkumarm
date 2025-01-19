@@ -250,6 +250,23 @@ footer {
     text-align: center;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .column.left {
+        margin: auto;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+
 /* Contact Section */
 .contact {
     padding: 6rem 0;
