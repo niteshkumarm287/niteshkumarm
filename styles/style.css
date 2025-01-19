@@ -321,7 +321,7 @@ body {
 
 .award-card h3 {
   font-size: 1.5rem;
-  color: var(--lightest);
+  color: var(--primary); /* Change color to --primary here */
   margin: 0.5rem 0;
 }
 
@@ -330,6 +330,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
 }
+
 
 /* Contact Section */
 .contact {
