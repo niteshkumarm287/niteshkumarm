@@ -416,17 +416,16 @@ footer {
 
 .typing {
     font-weight: bold;
-    color: var(--primary); /* Or any color you want */
-    white-space: nowrap;
-    border-right: 2px solid var(--primary);
+    color: var(--primary); /* Replace with your desired color */
+    white-space: nowrap; /* Prevent wrapping of text */
+    overflow: hidden; /* Hide overflowing text */
+    display: inline-block;
+    border-right: 2px solid var(--primary); /* The blinking cursor */
     animation: blink 0.7s step-end infinite;
 }
 
 @keyframes blink {
-    from {
-        border-color: var(--primary);
-    }
-    to {
+    50% {
         border-color: transparent;
     }
 }
