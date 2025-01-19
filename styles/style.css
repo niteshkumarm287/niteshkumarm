@@ -430,3 +430,18 @@ footer {
     }
 }
 
+/* Profile Picture */
+.profile-pic {
+    margin: 0 auto 20px; /* Center image horizontally and add some space below */
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the height */
+    overflow: hidden; /* Ensure the image stays within the circular shape */
+    border-radius: 50%; /* Make the image circular */
+}
+
+.profile-pic img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Crop the image to fit the circle */
+}
+
