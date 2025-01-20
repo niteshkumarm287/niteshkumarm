@@ -94,16 +94,34 @@ body {
 
 /* Home Section */
 .home {
-    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional parallax effect */
+    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 5rem;
+    justify-content: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+    z-index: 1;
 }
 
 .home-content {
-    max-width: 800px;  /* Adjust this value if needed */
-    margin: 0 auto;     /* Center the content */
+    position: relative;
+    z-index: 2;
+    text-align: center;
 }
+
 
 
 .home-content h1 {
